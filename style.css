@@ -1,22 +1,76 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 
 section{
     margin: 0;
     padding: 0;
-    position: relative;
-    background-color: #d5e1ef;
     height: 100vh;
+    background: #d5e1ef;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .card{
-    margin: 0 auto;
+    background: #fff;
+    width: 20%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.image{
+    padding: 15px;
+    border-radius: 15px;
+}
+
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.content{
+    font-family: "Outfit";
+    font-weight: 400;
+    padding: 25px 17px;
+    padding-bottom: 40px;
+}
+
+h1{
+    font-family: "Outfit";
+    font-weight: 700;
+    font-size: x-large;
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .card{
+        background: #fff;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .card{
+        background: #fff;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 15px;
+        text-align: center;
+    }
 }
